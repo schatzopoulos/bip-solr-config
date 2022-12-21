@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+   <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://andrea.imis.athena-innovation.gr:3306/bcn_papers" user="apache_bip_user" password="b1p1$@w3s0m3" batchSize="-1" />
+   <document>
+      <entity name="paper" pk="internal_id" query="SELECT internal_id, doi, title, abstract, authors, journal, pagerank, attrank, 3y_cc, citation_count, year FROM pmc_paper">
+         <field column="internal_id" name="internal_id" />
+         <field column="doi" name="doi" />
+         <field column="title" name="title" />
+         <field column="abstract" name="abstract" />
+         <field column="authors" name="authors" />
+         <field column="journal" name="journal" />
+         <field column="pagerank" name="influence" />
+         <field column="attrank" name="popularity" />
+	 <field column="3y_cc" name="impulse" />
+	 <field column="citation_count" name="citation_count" />
+         <field column="year" name="year" />
+      </entity>
+   </document>
+</dataConfig>
