@@ -314,7 +314,7 @@
       -->
     <autoCommit>
       <maxDocs>100000</maxDocs>		<!-- 100,000 docs -->
-      <maxTime>1200000</maxTime>	<!-- or 10  -->
+<!--      <maxTime>1200000</maxTime>	 or 10  -->
       <openSearcher>true</openSearcher>
     </autoCommit>
 
