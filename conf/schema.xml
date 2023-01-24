@@ -115,7 +115,7 @@
     <field name="title" type="text_en" multiValued="false" indexed="true" stored="false" />
     <field name="abstract" type="text_en" multiValued="false" indexed="true" stored="false" />
     <field name="authors" type="text_general" multiValued="false" indexed="true" stored="false" />
-    <field name="journal" type="string" multiValued="false" indexed="true" stored="false" />
+    <field name="journal" type="string" multiValued="false" indexed="true" stored="false" docValues="true" />
     <field name="influence" type="pfloat" multiValued="false" indexed="false" stored="false" docValues="true" />
     <field name="popularity" type="pfloat" multiValued="false" indexed="false" stored="false" docValues="true" />
     <field name="impulse" type="pfloat" multiValued="false" indexed="false" stored="false" docValues="true" />
